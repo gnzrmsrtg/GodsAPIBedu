@@ -31,11 +31,11 @@ const User = sequelize.define('User', {
         }
     },
     password_hash: { 
-        type: DataTypes.CHAR(1024),
+        type: DataTypes.TEXT,
         allowNull: true,
     },
     password_salt: { 
-        type: DataTypes.CHAR(1024),
+        type: DataTypes.TEXT,
         allowNull: true,
     },
     tarjeta: { 
