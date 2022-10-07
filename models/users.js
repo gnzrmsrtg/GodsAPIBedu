@@ -48,7 +48,8 @@ const User = sequelize.define('User', {
     tipo_tarjeta: { 
         type: DataTypes.CHAR(64),
         allowNull: true,
-    }
+    },
+    admin: { type: DataTypes.BOOLEAN }
 });
 
 User.createPassword = function(plainText) {

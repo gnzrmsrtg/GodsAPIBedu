@@ -11,6 +11,21 @@ const {
 
 const auth = require('../config/auth')
 
+/**
+ * @swagger 
+ * /gods/: 
+ *  get:
+ *      summary: Dioses disponibles.
+ *      description: Entrega una lista de dioses.
+ *      produces: 
+ *          - application/json
+ *      responses:
+ *          200: 
+ *              description: Todos los dioses disponibles.
+ *              type: json
+ */
+
+
 // Definimos la URL de las funciones
 router.get('/', getGods);
 router.get('/:id', getGod);
