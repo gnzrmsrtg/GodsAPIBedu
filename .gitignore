@@ -1,3 +1,5 @@
 node_modules
 .env
 db.sqlite
+db copy.sqlite
+config/config.json

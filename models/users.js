@@ -49,7 +49,7 @@ const User = sequelize.define('User', {
         type: DataTypes.CHAR(64),
         allowNull: true,
     },
-    admin: { type: DataTypes.BOOLEAN }
+    // admin: { type: DataTypes.BOOLEAN }
 });
 
 User.createPassword = function(plainText) {
